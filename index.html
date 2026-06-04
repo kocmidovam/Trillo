@@ -8,63 +8,64 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <meta name="description" content="Trillo responsive hotel booking interface concept">
+        <title>Trillo &mdash; Responsive booking UI concept</title>
     </head>
     <body>
         <div class="container">
             <header class="header">
                 <img src="img/logo.png" alt="trillo logo" class="logo">
-                <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button class="search__button">
-                        <svg class="search__icon">
+                <div class="search" role="search" aria-label="Hotel search demo">
+                    <input type="text" class="search__input" placeholder="Search hotels (demo only)" aria-label="Search hotels" readonly>
+                    <button class="search__button demo-control" type="button" aria-label="Search demo only" title="Demo control">
+                        <svg class="search__icon" aria-hidden="true">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
-                </form>
+                </div>
 
-                <nav class="user-nav">
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
+                <nav class="user-nav" aria-label="User actions">
+                    <button class="user-nav__icon-box demo-control" type="button" aria-label="7 saved items, demo only" title="Demo control">
+                        <svg class="user-nav__icon" aria-hidden="true">
                             <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                         </svg>
-                        <span class="user-nav__notification">7</span>
-                    </div>
-                    <div class="user-nav__icon-box">
-                        <svg class="user-nav__icon">
+                        <span class="user-nav__notification" aria-hidden="true">7</span>
+                    </button>
+                    <button class="user-nav__icon-box demo-control" type="button" aria-label="13 messages, demo only" title="Demo control">
+                        <svg class="user-nav__icon" aria-hidden="true">
                             <use xlink:href="img/sprite.svg#icon-chat"></use>
                         </svg>
-                        <span class="user-nav__notification">13</span>
-                    </div>
-                    <div class="user-nav__user">
-                        <img src="img/me2.jpg" alt="user photo" class="user-nav__user-photo">
-                        <span class="user-nav__user-name">Marta</span>
+                        <span class="user-nav__notification" aria-hidden="true">13</span>
+                    </button>
+                    <div class="user-nav__user" tabindex="0" aria-label="Open demo user menu">
+                        <img src="img/profile-avatar.svg" alt="" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Guest</span>
 
                         <div class="user-nav__profile-dropdown">
                             <ul class="user-nav__profile-list">
                                 <li class="user-nav__profile-item">
-                                    <a href="#" class="user-nav__profile-link">
-                                        <svg class="user-nav__profile-icon">
+                                    <button type="button" class="user-nav__profile-link demo-control" title="Demo control">
+                                        <svg class="user-nav__profile-icon" aria-hidden="true">
                                             <use xlink:href="img/sprite.svg#icon-user"></use>
                                         </svg>
-                                        <span class="user-nav__profile-link">Profile</span>
-                                    </a>
+                                        <span>Profile</span>
+                                    </button>
                                 </li>
                                 <li class="user-nav__profile-item">
-                                    <a href="#" class="user-nav__profile-link">
-                                        <svg class="user-nav__profile-icon">
+                                    <button type="button" class="user-nav__profile-link demo-control" title="Demo control">
+                                        <svg class="user-nav__profile-icon" aria-hidden="true">
                                             <use xlink:href="img/sprite.svg#icon-cog"></use>
                                         </svg>
-                                        <span class="user-nav__profile-link">Settings</span>
-                                    </a>
+                                        <span>Settings</span>
+                                    </button>
                                 </li>
                                 <li class="user-nav__profile-item">
-                                    <a href="#" class="user-nav__profile-link">
-                                        <svg class="user-nav__profile-icon">
+                                    <button type="button" class="user-nav__profile-link demo-control" title="Demo control">
+                                        <svg class="user-nav__profile-icon" aria-hidden="true">
                                             <use xlink:href="img/sprite.svg#icon-log-out"></use>
                                         </svg>
-                                        <span class="user-nav__profile-link">Logout</span>
-                                    </a>
+                                        <span>Logout</span>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
@@ -76,40 +77,40 @@
                 <nav class="sidebar">
                     <ul class="side-nav">
                         <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
+                            <button type="button" class="side-nav__link demo-control" aria-current="page" title="Demo control">
+                                <svg class="side-nav__icon" aria-hidden="true">
                                     <use xlink:href="img/sprite.svg#icon-home"></use>
                                 </svg>
                                 <span>Hotel</span>
-                            </a>
+                            </button>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
+                            <button type="button" class="side-nav__link demo-control" title="Demo control">
+                                <svg class="side-nav__icon" aria-hidden="true">
                                     <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
                                 </svg>
                                 <span>Flight</span>
-                            </a>
+                            </button>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
+                            <button type="button" class="side-nav__link demo-control" title="Demo control">
+                                <svg class="side-nav__icon" aria-hidden="true">
                                     <use xlink:href="img/sprite.svg#icon-key"></use>
                                 </svg>
                                 <span>Car rental</span>
-                            </a>
+                            </button>
                         </li>
                         <li class="side-nav__item">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
+                            <button type="button" class="side-nav__link demo-control" title="Demo control">
+                                <svg class="side-nav__icon" aria-hidden="true">
                                     <use xlink:href="img/sprite.svg#icon-map"></use>
                                 </svg>
                                 <span>Tours</span>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                     <div class="legal">
-                        &copy; 2020 by MartaK. All rights reserved.
+                        &copy; 2026 Marta Kocmidova
                     </div>
                 </nav>
 
@@ -161,7 +162,7 @@
                             <svg class="overview__icon-location">
                                 <use xlink:href="img/sprite.svg#icon-location-pin"></use>
                             </svg>
-                            <button class="btn-inline">Albufeira, Portugal</button>
+                            <button class="btn-inline demo-control" type="button" title="Demo control">Albufeira, Portugal</button>
                         </div>
                         <div class="overview__rating">
                             <div class="overview__rating-average">8.6</div>
@@ -227,7 +228,7 @@
                                    <div class="review__rating">7.8</div>
                                </figcaption>
                            </figure>
-                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                            <button class="btn-inline demo-control" type="button" title="Demo control">Show all <span>&rarr;</span></button>
                         </div>
                     </div>
 
@@ -235,13 +236,13 @@
                         <h2 class="cta__book-now">
                             Good news! We have 4 free rooms for your selected dates!
                         </h2>
-                        <button class="btn">
+                        <button class="btn demo-control" type="button" title="Demo control">
                             <span class="btn__visible">Book now</span>
                             <span class="btn__invisible">Only 4 rooms left</span>
                         </button>
                     </div>
                     <div class="legal-footer">
-                        &copy; 2020 by MartaK. All rights reserved.
+                        &copy; 2026 Marta Kocmidova
                     </div>
 
                 </main>
